@@ -57,10 +57,52 @@ body {
   border-bottom: 3px solid red;
 }
 
+.section2-bg-image{
+  background-image: url('./assets/h2-background-img-3.jpg');
+  min-height: 45em;
+  /* min-height: 380px; */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative
+}
+
+.image-overlay{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(61, 61, 61,0.5);
+}
+
+.section2-heading{
+  margin-top: 7rem;
+}
+
+.h-border1{
+  width: 4rem;
+  height: 2px;
+  background-color: #fff;
+}
+
+.g-title{
+font-size: 1.2rem;
+font-weight: bold;
+}
+
 @media only screen and (max-width: 600px) {
   .c-header-heading{
     font-size: 1.6rem !important;
     white-space: nowrap;
     font-weight: 900;
   }
+
+  .section2-bg-image{
+    min-height: 110em !important;
+  }
+  .re-c-game{
+    margin-top: 2rem !important;
+  }
+  
 }
