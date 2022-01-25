@@ -1,9 +1,18 @@
+@font-face {
+  font-family: viga;
+  src: url(./assets/fonts/Viga-Regular.ttf);
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   /*background-color: #FFFFFF;*/
 }
+
+
+
+p, h1, h2, h3, h4, h5, h6 {font-family: viga}
 
 body {
   max-width: 1920px;
@@ -91,6 +100,39 @@ font-size: 1.2rem;
 font-weight: bold;
 }
 
+.section3-bg{
+  background-color: #0E0E0E;
+}
+
+.dream-img{
+  width: 100%;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.s3-heading {
+  font-size: 4rem;
+  max-width: 80%;
+  font-weight: 400;
+}
+
+.s3-description{
+  font-size: 1.1rem;
+  max-width: 80%;
+  font-weight: 100;
+  color: #7f7f7f;
+}
+
+.btn-s3{
+  border-radius: 0 !important;
+  padding-left: 2.6rem !important;
+  padding-right: 2.6rem !important;
+  padding-top: 1rem !important;
+  padding-bottom: 1rem !important;
+  font-size: 1rem !important;
+}
+
+
 @media only screen and (max-width: 600px) {
   .c-header-heading{
     font-size: 1.6rem !important;
@@ -103,6 +145,58 @@ font-weight: bold;
   }
   .re-c-game{
     margin-top: 2rem !important;
+  }
+
+  .s3-heading {
+    font-size: 1.6rem !important;
+    margin-top: 2rem !important;
+  }
+  
+  .s3-description{
+    font-size: 0.8rem !important;
+  }
+
+  .btn-s3{
+    border-radius: 0 !important;
+    padding-left: 2rem !important;
+    padding-right: 2rem !important;
+    padding-top: 0.7rem !important;
+    padding-bottom: 0.7rem !important;
+    font-size: 0.9rem !important;
+  }
+  
+}
+
+@media only screen and (max-width: 768px) {
+  .c-header-heading{
+    font-size: 1.6rem !important;
+    white-space: nowrap;
+    font-weight: 900;
+  }
+
+  .section2-bg-image{
+    min-height: 110em !important;
+  }
+  .re-c-game{
+    margin-top: 2rem !important;
+  }
+
+  .s3-heading {
+    font-size: 1.6rem !important;
+    margin-top: 2rem !important;
+  }
+  
+  .s3-description{
+    font-size: 0.8rem !important;
+  }
+
+  .btn-s3{
+    border-radius: 0 !important;
+    padding-left: 2rem !important;
+    padding-right: 2rem !important;
+    padding-top: 0.7rem !important;
+    padding-bottom: 0.7rem !important;
+    font-size: 0.9rem !important;
   }
   
 }
