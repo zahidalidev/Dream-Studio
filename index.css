@@ -135,6 +135,9 @@ font-weight: bold;
 .testimonials-bg{
   background-color: #262323;
   min-height: 40rem;
+  background-position: center;
+  background-size: cover;
+  position: relative;
 }
 
 .tes-name {
@@ -178,6 +181,108 @@ font-weight: bold;
   padding-bottom: 0 !important;
 }
 
+.section6-bg-image{
+    background-image: url('./assets/h2-background-img-3.jpg');
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.vid-card{
+  background-color: rgba(0, 0, 0, 0) !important;
+}
+
+.video-img{
+  background-image: url('./assets/h2-video-img-1.jpg');
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: relative;
+  height: 30vw;
+  margin: 3rem;
+  margin-top: 7rem;
+  margin-bottom: 7rem;
+}
+
+.s6-video-card{
+  background-color: rgba(61, 61, 61,0);
+}
+
+.pl-btn{
+  font-size: 4vw;
+  color: #fff;
+}
+
+.footer-container{
+  background-color: black; 
+  width: 100%; 
+  height: 22rem; 
+  text-align: center;
+}
+
+.footer-items{
+  padding-top: 4rem;
+  display: flex;
+  align-content: flex-start;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.footer-feild-container{
+  padding-top: 4rem;
+  display: flex;
+  align-content: flex-start;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.footer-link{
+  color: #fff !important;
+  font-weight: bold;
+  width: 10%;
+  text-transform: uppercase;
+}
+
+.input-container{
+  border-bottom: 2px solid rgba(68, 68, 68, 0.5);
+  background-color: black;
+  width: 40vw;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-content: center;
+  align-items: center;
+}
+.footer-feild {
+  border: 0;
+  outline: 0;
+  font-size: 1em;
+  background-color: black;
+  color: #ccc;
+  padding: 0.5rem;
+}
+
+.fa-envelope{
+  color: white;
+  font-size: 1.3rem;
+}
+
+.footer-social{
+  padding-top: 4rem;
+  margin-bottom: 5rem;
+  display: flex;
+  align-content: flex-start;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.footer-social-link{
+  color: #fff !important;
+  font-weight: bold;
+  width: 2%;
+  text-transform: uppercase;
+}
+
+
 @media only screen and (max-width: 600px) {
   .c-header-heading{
     font-size: 1.6rem !important;
@@ -213,6 +318,17 @@ font-weight: bold;
     padding: 0 !important;
   }
   
+  .footer-link{
+    width: 25%;
+  }
+  
+  .input-container{
+    width: 80vw !important; 
+  }
+
+  .footer-social-link{
+    width: 10% !important;
+  }
 }
 
 @media only screen and (max-width: 768px) {
@@ -249,5 +365,10 @@ font-weight: bold;
   .expl-card{
     padding: 0 !important;
   }
-  
+  .footer-link{
+    width: 25%;
+  }
+  .footer-social-link{
+    width: 10% !important;
+  }
 }
