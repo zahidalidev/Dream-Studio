@@ -102,6 +102,8 @@ font-weight: bold;
 
 .section3-bg{
   background-color: #0E0E0E;
+  margin-right: 0 !important;
+  margin-left: 0 !important;
 }
 
 .dream-img{
