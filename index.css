@@ -21,7 +21,7 @@ body {
   background-image: url('./assets/hero-image.png');
   height: 40em;
   min-height: 380px;
-  background-position: center;
+  background-position: unset !important;
   background-repeat: no-repeat;
   background-size: cover;
   
@@ -175,6 +175,7 @@ body {
 
 .tes-des-container{
   max-width: 70%;
+  justify-content:space-between;
 }
 
 .tes-description{
@@ -331,6 +332,7 @@ body {
   display: none;
 }
 
+
 @media only screen and (max-width: 1000px) {
   .dream-logo{
     margin-left: 35% !important;
@@ -343,6 +345,11 @@ body {
 }
 
 @media only screen and (max-width: 768px) {
+
+  .bg-image{
+    height: 20em !important;
+  }
+
   .c-header-heading{
     font-size: 1.6rem !important;
     white-space: nowrap;
@@ -350,7 +357,7 @@ body {
   }
 
   .section2-bg-image{
-    min-height: 110em !important;
+    min-height: 120em !important;
   }
   .re-c-game{
     margin-top: 2rem !important;
@@ -386,4 +393,38 @@ body {
   .input-container{
     width: 76vw !important;
   }
+  .app-store-btn{
+    margin-bottom: 2rem;
+  }
+
+  .welcome-container{
+    margin-bottom: 4rem !important;
+    margin-top: 6rem !important;
+    margin-left: -3rem !important;
+  }
+  .tes-chev{
+    display: none !important;
+  }
+ 
+  .tes-des-container{
+    max-width: 100% !important;
+    justify-content:center !important;
+  }
+
+  .games-section{
+    margin-left: 0px !important;
+    margin-right: 0px !important;
+  }
+  .dream-container{
+    margin-top: 5rem !important;
+    margin-bottom: 5rem !important;
+  }
+  .tes-description{
+    font-size: 0.8rem !important;
+  }
+
+  .footer-container{
+    height: 23rem !important;
+  }
+
 }
