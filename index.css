@@ -29,6 +29,10 @@ body {
   position: relative
 }
 
+.dream-logo{
+  cursor: pointer;
+}
+
 .navbar{
   box-shadow: none !important;
 }
@@ -61,6 +65,7 @@ body {
 	border-right: 15px solid transparent;
 	height: 0;
 	width: 12rem;
+  cursor: pointer;
 }
 
 .c-buy{
@@ -105,8 +110,13 @@ body {
 }
 
 .g-title{
-font-size: 1.2rem;
-font-weight: bold;
+  font-size: 1.2rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.game-img{
+  cursor: pointer;
 }
 
 .section3-bg{
@@ -222,6 +232,7 @@ font-weight: bold;
 .pl-btn{
   font-size: 4vw;
   color: #fff;
+  cursor: pointer;
 }
 
 .footer-container{
@@ -247,6 +258,7 @@ font-weight: bold;
 }
 
 .footer-link{
+  cursor: pointer;
   color: #fff !important;
   font-weight: bold;
   width: 10%;
@@ -291,6 +303,7 @@ font-weight: bold;
   font-weight: bold;
   width: 2%;
   text-transform: uppercase;
+  cursor: pointer;
 }
 
 .up-button{
@@ -367,6 +380,7 @@ font-weight: bold;
     padding: 0 !important;
   }
   .footer-link{
+    cursor: pointer;
     width: 25%;
   }
   .footer-social-link{
