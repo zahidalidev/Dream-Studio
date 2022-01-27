@@ -7,7 +7,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  /*background-color: #FFFFFF;*/
 }
 
 
@@ -344,8 +343,6 @@ body {
 }
 
 @media only screen and (max-width: 768px) {
-  
-
   .c-header-heading{
     font-size: 1.6rem !important;
     white-space: nowrap;
@@ -385,5 +382,8 @@ body {
   }
   .footer-social-link{
     width: 10% !important;
+  }
+  .input-container{
+    width: 76vw !important;
   }
 }
