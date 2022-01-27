@@ -56,6 +56,15 @@ body {
 
 .buy-button{
   margin-top: 100 !important;
+  border-top: 50px solid red;
+	border-left: 15px solid transparent;
+	border-right: 15px solid transparent;
+	height: 0;
+	width: 12rem;
+}
+
+.c-buy{
+  margin-top: -35px;
 }
 
 .nav-link:hover {
@@ -288,62 +297,42 @@ font-weight: bold;
   position: fixed;
   right: 1rem;
   bottom: 1rem;
+  border-top: 50px solid red;
+	border-left: 15px solid transparent;
+	border-right: 15px solid transparent;
+	height: 0;
+	width: 5rem;
+  cursor: pointer;
 }
+
 
 .footer-chev{
   font-size: 1em;
   cursor: pointer;
+  position: fixed;
+  right: 3rem;
+  bottom: 2rem;
+  color: white;
 }
 
-@media only screen and (max-width: 600px) {
-  .c-header-heading{
-    font-size: 1.6rem !important;
-    white-space: nowrap;
-    font-weight: 900;
+.scroll-shown{
+  display: none;
+}
+
+@media only screen and (max-width: 1000px) {
+  .dream-logo{
+    margin-left: 35% !important;
   }
 
-  .section2-bg-image{
-    min-height: 110em !important;
-  }
-  .re-c-game{
-    margin-top: 2rem !important;
-  }
-
-  .s3-heading {
-    font-size: 1.6rem !important;
-    margin-top: 2rem !important;
-  }
-  
-  .s3-description{
-    font-size: 0.8rem !important;
-  }
-
-  .btn-s3{
-    border-radius: 0 !important;
-    padding-left: 2rem !important;
-    padding-right: 2rem !important;
-    padding-top: 0.7rem !important;
-    padding-bottom: 0.7rem !important;
-    font-size: 0.9rem !important;
-  }
-  .expl-card{
-    padding: 0 !important;
-  }
-  
-  .footer-link{
-    width: 25%;
-  }
-  
-  .input-container{
-    width: 80vw !important; 
-  }
-
-  .footer-social-link{
-    width: 10% !important;
+  .navbar-res-container{
+    display: flex !important;
+    justify-content: flex-start !important;
   }
 }
 
 @media only screen and (max-width: 768px) {
+  
+
   .c-header-heading{
     font-size: 1.6rem !important;
     white-space: nowrap;
