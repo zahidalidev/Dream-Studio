@@ -2,10 +2,11 @@
 <html lang="en">
 
 <head>
-  <title>Bootstrap Example</title>
+  <title>Dream Studio</title>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
     integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
   <link rel="stylesheet" href="index.css" />
@@ -20,6 +21,16 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
     integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
     crossorigin="anonymous"></script>
+
+  <script>
+    jQuery(window).scroll(function () {
+      var $el = jQuery('.scroll-button');
+
+      if (jQuery(this).scrollTop() >= 200) $('.scroll-button').removeClass('scroll-shown');
+      else $('.scroll-button').addClass('scroll-shown');
+    });
+  </script>
+
 </head>
 
 <body>
@@ -27,22 +38,22 @@
   <!-- Header  -->
   <header>
     <!-- Background image container -->
-    <div class="text-center bg-image">
+    <div class="text-center bg-image" id="header">
 
       <!-- Navbar -->
       <nav class="navbar navbar-expand-lg">
-        <div class="container">
-          <a class="navbar-brand ">
-            <img src="./assets/logo-header.png" height="50" alt="Logo" loading="lazy" style="margin-top: -1px;" />
-          </a>
+        <div class="container navbar-res-container">
 
           <!-- Toggle button -->
           <button class="navbar-toggler" type="button" data-mdb-toggle="collapse"
-            data-mdb-target="#navbarButtonsExample" aria-controls="navbarButtonsExample" aria-expanded="false"
-            aria-label="Toggle navigation">
+            data-mdb-target="#navbarButtonsExample" aria-expanded="false" aria-label="Toggle navigation">
             <i class="fa fa-arrows-alt nav-icon mt-1" aria-hidden="true"></i>
           </button>
           <!-- Toggle button end-->
+
+          <a class="navbar-brand dream-logo ">
+            <img src="./assets/logo-header.png" height="50" alt="Logo" loading="lazy" style="margin-top: -1px;" />
+          </a>
 
           <!-- Collapsible -->
           <div class="collapse navbar-collapse justify-content-end" id="navbarButtonsExample">
@@ -85,7 +96,10 @@
       <!-- Header Content -->
       <div class="d-flex flex-column justify-content-center align-items-center h-100 text-white">
         <h1 class="mb-3 c-header-heading text-uppercase ">A Dream Making Studio</h1>
-        <input type="button" class="btn btn-danger btn-lg buy-button text-uppercase" href="#!" value="Buy Theme" />
+        <div class="buy-button " href="#!" value="Buy Theme">
+          <p class="text-uppercase c-buy ">Buy Theme</p>
+        </div>
+
       </div>
       <!-- Header Content end -->
     </div>
@@ -235,7 +249,6 @@
         <p class="footer-link" href="#">Shop</p>
         <p class="footer-link" href="#">Contact us</p>
         <p class="footer-link" href="#">Portfolio</p>
-        </ul>
       </div>
 
       <div class="footer-feild-container">
@@ -251,9 +264,15 @@
         <i href="#" class="fab footer-social-link fa-youtube"></i>
         <i href="#" class="fab footer-social-link fa-instagram"></i>
         <i href="#" class="fab footer-social-link fa-twitch"></i>
-        </ul>
       </div>
+      <div onClick="document.getElementById('header').scrollIntoView();"
+        class="scroll-button scroll-shown up-button text-uppercase" href="#!">
+        <i class="fas footer-chev fa-chevron-up"></i>
+      </div>
+
     </div>
+
+
   </footer>
   <!-- Footer end -->
 
